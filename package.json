@@ -4,35 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-<<<<<<< HEAD
     "start": "nodemon src/server.js",
     "test": "cross-env NODE_ENV=test jest"
-=======
-    "start": "nodemon src/index.js"
->>>>>>> 8f8fdd3882a45cf059ffc8f1ba2d6f7250989c3f
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-<<<<<<< HEAD
     "celebrate": "^12.0.1",
     "cors": "^2.8.5",
     "cross-env": "^7.0.2",
-=======
-    "cors": "^2.8.5",
->>>>>>> 8f8fdd3882a45cf059ffc8f1ba2d6f7250989c3f
     "express": "^4.17.1",
     "knex": "^0.20.13",
     "sqlite3": "^4.1.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.2",
-<<<<<<< HEAD
     "jest": "^25.2.4",
     "supertest": "^4.0.2"
-=======
-    "n": "^6.4.0"
->>>>>>> 8f8fdd3882a45cf059ffc8f1ba2d6f7250989c3f
   }
 }

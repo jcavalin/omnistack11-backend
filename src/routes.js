@@ -1,9 +1,5 @@
 const express = require('express');
-<<<<<<< HEAD
 const {celebrate, Segments, Joi} = require('celebrate');
-=======
-
->>>>>>> 8f8fdd3882a45cf059ffc8f1ba2d6f7250989c3f
 const OngController = require('./controllers/OngController');
 const IncidentController = require('./controllers/IncidentController');
 const ProfileController = require('./controllers/ProfileController');
@@ -15,7 +11,6 @@ const routes = express.Router();
 routes.post('/sessions', SessionController.create);
 
 routes.get('/ongs', OngController.index);
-<<<<<<< HEAD
 routes.post('/ongs', celebrate({
     [Segments.BODY] : Joi.object().keys({
         name : Joi.string().required(),
@@ -43,14 +38,5 @@ routes.get('/profile', celebrate({
         authorization : Joi.string().required(),
     }).unknown()
 }), ProfileController.index);
-=======
-routes.post('/ongs', OngController.create);
-
-routes.get('/incidents', IncidentController.index);
-routes.post('/incidents', IncidentController.create);
-routes.delete('/incidents/:id', IncidentController.delete);
-
-routes.get('/profile', ProfileController.index);
->>>>>>> 8f8fdd3882a45cf059ffc8f1ba2d6f7250989c3f
 
 module.exports = routes;
